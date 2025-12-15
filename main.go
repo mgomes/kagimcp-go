@@ -4,6 +4,7 @@ import (
 	"flag"
 	"log/slog"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -23,6 +24,9 @@ func main() {
 			os.Exit(1)
 		}
 	}
+
+	apiKey = strings.TrimSpace(apiKey)
+	apiKey = strings.TrimPrefix(apiKey, "Bot ")
 
 	kagiSrv := NewKagiServer(apiKey)
 
