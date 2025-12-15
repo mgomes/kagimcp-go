@@ -1,1 +1,1 @@
-mcp: ./kagimcp -t stdio
+mcp-websearch: kagimcp -t stdio
