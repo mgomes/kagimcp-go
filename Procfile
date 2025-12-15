@@ -1,0 +1,1 @@
+mcp: ./kagimcp -t stdio
